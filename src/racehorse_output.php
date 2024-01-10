@@ -14,7 +14,7 @@ if(empty($POST['recehorse_name'])){
 }else if($sql->execute([$_POST['recehorse_name'],$POST['fathername'],$POST['gender'],$POST['birthday']])){
     echo '追加に成功しました。';   
 }else {
-    echo '追加に失敗しました。'
+    echo '追加に失敗しました。';
 }
 ?>
 <?php require 'footer.php'; ?>
