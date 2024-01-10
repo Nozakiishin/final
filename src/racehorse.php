@@ -5,7 +5,8 @@
 $pdo=new PDO($connect, USER, PASS);
 foreach($pdo->query('select * from Racehorse') as $row){
     echo '<p>';
-    echo $row['recehorse_name'],':';
+    echo $row['racehorse_id'],':';
+    echo $row['racehorse_name'],':';
     echo $row['fathername'],':';
     echo $row['gender'],':';
     echo $row['bithday'],':';
