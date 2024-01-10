@@ -3,7 +3,7 @@
 <?php
 $pdo=new PDO($connect, USER, PASS);
 $sql=$pdo->prepare('insert into Racehorse(racehorse_name,fathername,gender,birthday) values (?,?,?,?,)');
-if(empty($POST['recehorse_name'])){
+if(empty($POST['racehorse_name'])){
     echo '競走馬名を入力してください';   
 }else if(empty($POST['fathername'])){
     echo '父名を入力してください';   
