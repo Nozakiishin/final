@@ -6,5 +6,6 @@
 性別<input type="text" name="gender"><br>
 年月日<input type="date" name="birthday"><br>
 
+<button type="submit">追加</button>
 </form>
 <?php require 'footer.php'; ?>
