@@ -11,10 +11,10 @@ if(empty($POST['racehorse_name'])){
     echo '性別を入力してください';   
 }else if(empty($POST['birthday'])){
     echo '年月日を入力してください';   
-}else if($sql->execute([$_POST['recehorse_name'],$POST['fathername'],$POST['gender'],$POST['birthday']])){
-    echo '追加に成功しました。';   
+}else if($sql->execute([$_POST['racehorse_id'],$_POST['racehorse_name'],$POST['fathername'],$POST['gender'],$POST['birthday']])){
+    echo '追加しました。';   
 }else {
-    echo '追加に失敗しました。';
+    echo '追加できませんでした。';
 }
 ?>
 <?php require 'footer.php'; ?>
