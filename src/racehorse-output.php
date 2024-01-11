@@ -12,10 +12,24 @@ $sql=$pdo->prepare('insert into Racehorse(racehorse_id,racehorse_name,fathername
 // }else if(empty($POST['birthday'])){
 //     echo '年月日を入力してください';   
 //}else 
-// if($sql->execute([$_POST['racehorse_id'],$_POST['racehorse_name'],$POST['fathername'],$POST['gender'],$POST['birthday']])){
-//     echo '追加しました。';   
-// }else {
-//     echo '追加できませんでした。';
-// }
+if($sql->execute([$_POST['racehorse_id'],$_POST['racehorse_name'],$POST['fathername'],$POST['gender'],$POST['birthday']])){
+    echo '追加しました。';   
+}else {
+    echo '追加できませんでした。';
+}
 ?>
+<?php
+foreach($pdo->query('select * from Racehorse') as $row){
+    echo '<p>';
+    echo $row['racehorse_id'],':';
+    echo $row['racehorse_name'],':';
+    echo $row['fathername'],':';
+    echo $row['gender'],':';
+    echo $row['bithday'],':';
+    echo '</p>';
+}
+
+?>
+<from atction="index.html" method="post">
+    <button type="submit">ホームに戻る</button>
 <?php require 'footer.php'; ?>
