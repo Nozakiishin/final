@@ -16,22 +16,22 @@
 		echo '<div class="td0">',$row['racehorse_id'],'</div>';
 
 		echo '<div class="td1">';
-		echo '<input type="text" name="name" value"',$row['racehorse_name'],'">';
+		echo '<input type="text" name="racehorse_name" value"',$row['racehorse_name'],'">';
 		echo '</div> ';
 
 		echo '<div class="td1">';
-		echo '<input type="text" name="price" value"',$row['fathername'],'">';
+		echo '<input type="text" name="fathername" value"',$row['fathername'],'">';
 		echo '</div> ';
 
         echo '<div class="td1">';
-		echo '<input type="text" name="name" value"',$row['gender'],'">';
+		echo '<input type="text" name="gender" value"',$row['gender'],'">';
 		echo '</div> ';
 
 		echo '<div class="td1">';
-		echo '<input type="text" name="name" value"',$row['birthday'],'">';
+		echo '<input type="text" name="birthday" value"',$row['birthday'],'">';
 		echo '</div> ';
 
-        echo '<input type="hidden" name="id" value="',$row['category_id'],'">';
+        echo '<input type="hidden" name="category_id" value="',$row['category_id'],'">';
 
 		echo '<div class="td0">',$row['category_id'],'</div>';
 
