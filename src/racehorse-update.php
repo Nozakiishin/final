@@ -25,9 +25,9 @@
 		echo '<div class="td1">';
 		echo '<input type="text" name="name" value"',$row['birthday'],'">';
 		echo '</div> ';
-        '<input type="hidden" name="id" value="',$row['category_id'],'">';
-		'<div class="td0">',$row['category_id'],'</div>';
-	    '<div class="td1">';
+        echo '<input type="hidden" name="id" value="',$row['category_id'],'">';
+		echo '<div class="td0">',$row['category_id'],'</div>';
+	    echo '<div class="td1">';
 		echo '<div class="td2"><input type="submit" value="更新"></div>';
 		echo '</form>';
 		echo "\n";
