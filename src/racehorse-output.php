@@ -24,10 +24,10 @@ $sql=$pdo->prepare('insert into Racehorse values (default,?,?,?,?,null)');
 foreach($pdo->query('select * from Racehorse') as $row){
     echo '<p>';
     echo $row['racehorse_id'],':';
-    echo $row['racehorse_name'],':';
-    echo $row['fathername'],':';
-    echo $row['gender'],':';
-    echo $row['birthday'],':';
+    echo '競走馬名',$row['racehorse_name'],':';
+    echo '父名',$row['fathername'],':';
+    echo '性別',$row['gender'],':';
+    echo '年月日',$row['birthday'];
     echo '</p>';
 }
 
