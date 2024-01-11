@@ -9,7 +9,7 @@ foreach($pdo->query('select * from Racehorse') as $row){
     echo $row['racehorse_name'],':';
     echo $row['fathername'],':';
     echo $row['gender'],':';
-    echo $row['bithday'],':';
+    echo $row['birthday'],':';
     echo '</p>';
 }
 
