@@ -2,7 +2,7 @@
 <?php require 'header.php'; ?>
 <?php
 $pdo=new PDO($connect, USER, PASS);
-$sql=$pdo->prepare('insert into Racehorse values (default,?,?,?,?,default)');
+$sql=$pdo->prepare('insert into Racehorse values (default,?,?,?,?,null)');
 // if(empty($POST['racehorse_name'])){
 //     echo '競走馬名を入力してください';   
 // }else if(empty($POST['fathername'])){
@@ -27,7 +27,7 @@ foreach($pdo->query('select * from Racehorse') as $row){
     echo $row['racehorse_name'],':';
     echo $row['fathername'],':';
     echo $row['gender'],':';
-    echo $row['bithday'],':';
+    echo $row['birthday'],':';
     echo '</p>';
 }
 
