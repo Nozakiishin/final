@@ -21,7 +21,6 @@ if(empty($POST['racehorse_name'])){
 <?php
 foreach($pdo->query('select * from Racehorse') as $row){
     echo '<p>';
-    echo $row['racehorse_id'],':';
     echo $row['racehorse_name'],':';
     echo $row['fathername'],':';
     echo $row['gender'],':';
