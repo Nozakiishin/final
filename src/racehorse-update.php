@@ -1,6 +1,5 @@
 <?php require 'db-connect.php';?>
 <?php require 'header.php'; ?>
-    <div class="th0">競走馬ID</div>
 	<div class="th1">競走馬名</div>
 	<div class="th1">父名</div>
     <div class="th1">性別</div>
