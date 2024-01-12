@@ -10,7 +10,6 @@
         echo $row['fathername'];
         echo $row['gender'];
         echo $row['birthday'];
-             $row['category_id'];
         echo '<a href="racehorse-delete-output?id=',$row['racehorse_id'],'">削除</a>';
 
     
