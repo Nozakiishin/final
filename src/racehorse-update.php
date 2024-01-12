@@ -28,7 +28,7 @@
 		echo '</div> ';
 
 		echo '<div class="td1">';
-		echo '<input type="text" name="birthday" value"',$row['birthday'],'">';
+		echo '<input type="date" name="birthday" value"',$row['birthday'],'">';
 		echo '</div> ';
 
         echo '<input type="hidden" name="category_id" value="',$row['category_id'],'">';
