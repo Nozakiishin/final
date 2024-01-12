@@ -25,5 +25,8 @@
     
     }
 ?> 
+    <form action="index.html" method="post">
+        <button type="submit">ホームに戻る</button>
+    </form>
 
 <?php require 'footer.php'; ?>
