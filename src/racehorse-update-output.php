@@ -29,6 +29,7 @@ foreach($pdo->query('select * from Racehorse') as $row){
 }
 
 ?>
-<from atction="index.html" method="post">
-    <button type="submit">ホームに戻る</button>
+    <form action="index.html" method="post">
+        <button type="submit">ホームに戻る</button>
+    </form>
 <?php require 'footer.php'; ?>
