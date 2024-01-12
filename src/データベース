@@ -1,0 +1,8 @@
+CREATE TABLE Racehorse(
+    racehorse_id INTEGER(2) auto_increment,
+    racehorse_name VARCHAR(50) NOT NULL,
+    fathername VARCHAR(50)NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    birthday date NOT NULL,
+    PRIMARY KEY(racehorse_id)
+);

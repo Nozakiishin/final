@@ -2,7 +2,7 @@
 <?php require 'header.php'; ?>
 <?php
 $pdo=new PDO($connect, USER, PASS);
-$sql=$pdo->prepare('insert into Racehorse values (default,?,?,?,?,null)');
+$sql=$pdo->prepare('insert into Racehorse values (default,?,?,?,?)');
 // if(empty($POST['racehorse_name'])){
 //     echo '競走馬名を入力してください';   
 // }else if(empty($POST['fathername'])){

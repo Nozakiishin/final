@@ -31,13 +31,10 @@
 		echo '<input type="date" name="birthday" value"',$row['birthday'],'">';
 		echo '</div> ';
 
-        echo '<input type="hidden" name="category_id" value="',$row['category_id'],'">';
-
-		echo '<div class="td0">',$row['category_id'],'</div>';
-
 	    echo '<div class="td1">';
 		echo '<div class="td2"><input type="submit" value="更新"></div>';
 		echo '</form>';
+		
 		echo "\n";
 	}
 ?>
