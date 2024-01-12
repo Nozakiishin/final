@@ -12,11 +12,13 @@ $sql=$pdo->prepare('update Racehorse set racehorse_id=default,racehorse_name=?, 
 // }else if(empty($POST['birthday'])){
 //     echo '年月日を入力してください';   
 // }
-else if($sql->execute([$_POST['racehorse_name'],$POST['fathername'],$POST['gender'],$POST['birthday']])){
-    echo '追加しました。';   
-}else {
-    echo '追加できませんでした。';
-}
+// else if(
+    $sql->execute([$_POST['racehorse_name'],$POST['fathername'],$POST['gender'],$POST['birthday']]);
+    // ){
+    // echo '追加しました。';   
+// }else {
+    // echo '追加できませんでした。';
+// }
 
 ?>
 <?php
