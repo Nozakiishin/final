@@ -11,7 +11,7 @@
 	foreach ($pdo->query('select * from Racehorse') as $row) {
 		echo '<form action="racehorse-update-output.php" method="post">';
 
-		echo '<input type="hidden" name="racehorse_id" value="',$row['raccehorse_id'],'">';
+		echo '<input type="hidden" name="racehorse_id" value="',$row['racehorse_id'],'">';
 
 		echo '<div class="td0">',$row['racehorse_id'],'</div>';
 
