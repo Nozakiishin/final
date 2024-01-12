@@ -2,7 +2,7 @@
 <?php require 'header.php'; ?>
 <?php
 $pdo=new PDO($connect, USER, PASS);
-$sql=$pdo->prepare('update Racehorse set racehorse_name=?, fathername=? gender=?,birthday=TO_DATE(?,"YYYY-MM-DD")  where racehorse_id=? ');
+$sql=$pdo->prepare('update Racehorse set racehorse_name=?, fathername=? gender=?,birthday=TO_DATE(?,"YYYYMMDD")  where racehorse_id=? ');
 // if(empty($POST['racehorse_name'])){
 //     echo '競走馬名を入力してください';   
 // }else if(empty($POST['fathername'])){
@@ -13,7 +13,7 @@ $sql=$pdo->prepare('update Racehorse set racehorse_name=?, fathername=? gender=?
 //     echo '年月日を入力してください';   
 // }
 // else if(
-    $sql->execute([$_POST['racehorse_name'],$_POST['fathername'],$_POST['gender'],$_POST['birthday']]);
+    $sql->execute([$_POST['racehorse_name'],$_POST['fathername'],$_POST['gender'],$_POST['birthday'],$_POST['racehorse_id']]);
     // ){
     // echo '追加しました。';   
 // }else {
