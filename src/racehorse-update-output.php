@@ -2,7 +2,7 @@
 <?php require 'header.php'; ?>
 <?php
 $pdo=new PDO($connect, USER, PASS);
-$sql=$pdo->prepare('update Racehorse set racehorse_id=default,racehorse_name=?, fathername=? gender=?,birthday=? category_id=num where racehorse_id=? and catygory_id');
+$sql=$pdo->prepare('update Racehorse set racehorse_id=default,racehorse_name=?, fathername=? gender=?,birthday=? category_id=num where racehorse_id=? ');
 // if(empty($POST['racehorse_name'])){
 //     echo '競走馬名を入力してください';   
 // }else if(empty($POST['fathername'])){
