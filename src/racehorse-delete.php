@@ -6,11 +6,11 @@
     $pdo=new PDO($connect, USER, PASS);
     foreach($pdo->query('select * from Racehorse') as $row){
         echo '<p>';
-        echo $row['racehorse_id'];
-        echo $row['racehorse_name'];
-        echo $row['fathername'];
-        echo $row['gender'];
-        echo $row['birthday'];
+        echo $row['racehorse_id'],':';
+        echo $row['racehorse_name'],':';
+        echo $row['fathername'],':';
+        echo $row['gender'],':';
+        echo $row['birthday'],':';
         echo '<a href="racehorse-delete-output?id=',$row['racehorse_id'],'">削除</a>';
         echo '</p>';
 
