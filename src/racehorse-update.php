@@ -1,6 +1,6 @@
 <?php require 'db-connect.php';?>
 <?php require 'header.php'; ?>
-
+<h1>競走馬情報の更新</h1>
 <?php
     $pdo=new PDO($connect, USER, PASS);
 

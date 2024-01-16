@@ -1,6 +1,6 @@
 <?php require 'db-connect.php';?>
 <?php require 'header.php'; ?>
-<h1>競走馬一覧</h1>
+<h1>競走馬の一覧</h1>
 <?php
 $pdo=new PDO($connect, USER, PASS);
 foreach($pdo->query('select * from Racehorse') as $row){
