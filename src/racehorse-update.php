@@ -8,16 +8,17 @@
 		echo '<form action="racehorse-update-output.php" method="post">';
 
 		echo '<input type="hidden" name="racehorse_id" value="',$row['racehorse_id'],'">';
-		
+
 		echo '<p>';
+	
+		echo '<div class="td0">',$row['racehorse_id'],'</div>';
+
 		echo '競走馬名:';
 		echo $row['racehorse_name'],'　父名:';
 		echo $row['fathername'],'　性別:';
 		echo $row['gender'],'　年月日:';
 		echo $row['birthday'];    
 		echo '</p>';
-	
-		echo '<div class="td0">',$row['racehorse_id'],'</div>';
 
 		echo '<div class="td1">';
 		echo '競走馬名:<input type="text" name="racehorse_name" value"',$row['racehorse_name'],'">';
