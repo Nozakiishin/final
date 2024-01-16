@@ -4,7 +4,7 @@
 <?php
     $pdo=new PDO($connect, USER, PASS);
     $sql=$pdo->prepare('delete from Racehorse where racehorse_id=?');
-    if($sql->execute([$_GET['racehorse_id']])){
+    if($sql->execute([$_GET['id']])){
         echo '削除に成功しました。';
     }else{
         echo '削除に失敗しました。';
