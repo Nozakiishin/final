@@ -15,9 +15,9 @@ $sql=$pdo->prepare('update Racehorse set racehorse_name=?, fathername=? ,gender=
 // else
  if(
     $sql->execute([$_POST['racehorse_name'],$_POST['fathername'],$_POST['gender'],$_POST['birthday'],$_POST['racehorse_id']])){
-    echo '追加しました。';   
+    echo '更新しました。';   
 }else {
-    echo '追加できませんでした。';
+    echo '更新できませんでした。';
 }
 
 ?>
