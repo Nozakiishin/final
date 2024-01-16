@@ -13,21 +13,20 @@ $sql=$pdo->prepare('insert into Racehorse values (default,?,?,?,?)');
 //     echo '年月日を入力してください';   
 //}else 
 //if(
-    $sql->execute([$_POST['racehorse_name'],$_POST['fathername'],$_POST['gender'],$_POST['birthday']]);
-    //){
-//     echo '追加しました。';   
-// }else {
-//     echo '追加できませんでした。';
-// }
+    $sql->execute([$_POST['racehorse_name'],$_POST['fathername'],$_POST['gender'],$_POST['birthday']]){
+    echo '追加しました。';   
+}else {
+    echo '追加できませんでした。';
+}
 ?>
 <?php
 foreach($pdo->query('select * from Racehorse') as $row){
     echo '<p>';
-    echo $row['racehorse_id'],':';
-    echo '競走馬名',$row['racehorse_name'],':';
-    echo '父名',$row['fathername'],':';
-    echo '性別',$row['gender'],':';
-    echo '年月日',$row['birthday'];
+    echo $row['racehorse_id'],'競走馬名:';
+    echo $row['racehorse_name'],'父名:';
+    echo $row['fathername'],'性別:';
+    echo $row['gender'],'年月日:';
+    echo $row['birthday'];
     echo '</p>';
 }
 
