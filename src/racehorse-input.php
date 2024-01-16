@@ -1,5 +1,5 @@
 <?php require 'header.php'; ?>
-<p>競走馬情報の登録</p>
+<h1>競走馬情報の登録</h1>
 <form action="racehorse-output.php" method="post">
 競走馬名:<input type="text" name="racehorse_name"><br>
 父名:<input type="text" name="fathername"><br>
