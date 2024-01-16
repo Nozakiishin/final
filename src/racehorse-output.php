@@ -14,10 +14,10 @@ $sql=$pdo->prepare('insert into Racehorse values (default,?,?,?,?)');
 //}else 
 //if(
     $sql->execute([$_POST['racehorse_name'],$_POST['fathername'],$_POST['gender'],$_POST['birthday']]){
-    echo '追加しました。';   
-}else {
-    echo '追加できませんでした。';
-}
+//     echo '追加しました。';   
+// }else {
+//     echo '追加できませんでした。';
+// }
 ?>
 <?php
 foreach($pdo->query('select * from Racehorse') as $row){
